@@ -18,7 +18,13 @@ pipeline{
             }
         }
 
-        
+        stage('sonar scan'){
+            steps{
+                echo '========executing sonar scan========'
+                sh 'ls -ltr'
+                sh 'sonar-scanner'
+            }
+            
     }
     post{
         always{
