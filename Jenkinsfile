@@ -24,7 +24,7 @@ pipeline{
                 sh 'ls -ltr'
                 sh 'sonar-scanner'
             }
-            
+        }    
     }
     post{
         always{
